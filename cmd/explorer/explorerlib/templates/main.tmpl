@@ -3,7 +3,7 @@
 {{ template "header" . }}
 {{ template "txpool" . }}
 
-      <h2 style="margin-bottom: 0px">Transactions in the last 11 blocks</h2>
+      <h2 style="margin-bottom: 0px"> Global Transactions in the last 11 blocks</h2>
 
     <h4 style="font-size: 14px; margin-top: 0px">(Median size of these blocks: 0.09 kB)</h4>
     {{ template "paging" . }}
@@ -13,7 +13,7 @@
                 <tr>
                     <td>height</td>
                     <td>topo height</td>
-                    <td>age [h:m:s.ms]<!--(Δm)--></td>
+                    <td>age [Jam:Menit:Mili detik]<!--(Δm)--></td>
                     <td>miniblocks</td>
                     <td>size [kiB]<!--(Δm)--></td>
                     <td>tx hash</td>
@@ -26,7 +26,7 @@
                 
                 {{range .block_array}}
                 <tr>
-                    <td>  {{if .SyncBlock }} <strong>{{.Height}}</strong> {{else}} <font color="purple">{{.Height}}</font>   {{end}} </td>
+                    <td>  {{if .SyncBlock }} <strong>{{.Height}}</strong> {{else}} <font color="black">{{.Height}}</font>   {{end}} </td>
                     <td><a href="/block/{{.TopoHeight}}">{{.TopoHeight}}</a></td>
                     
                     <td>{{.Age}}</td>
