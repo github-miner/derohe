@@ -181,11 +181,11 @@ input#toggle-1[type=checkbox]:checked ~ div#decoded-inputs {
         </h3>
 
 
-        <h3 style="font-size: 12px; margin-top: 5px; margin-bottom: 3">
-            Network difficulty: {{ .Network_Difficulty }}
-            | Hash rate: {{ .hash_rate }} MH&#x2F;s
-            | Average Block Time(50)  {{.averageblocktime50}} sec
-            | Total supply : {{ .total_supply }}
+        <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 4">
+           Global Network difficulty: {{ .Network_Difficulty }}
+            |Global Network Hash rate: {{ .hash_rate }} MH&#x2F;s
+            | Average Global Network Block Time(50)  {{.averageblocktime50}} sec
+            | Total supply DERO : {{ .total_supply }}
             | Mempool size : {{ .txpool_size }}
             | Fee per kb: {{.fee_per_kb}}
             | Median block size limit: {{.median_block_size}} kB
